@@ -1,0 +1,276 @@
+
+/*-------------------------------------------
+	Hero
+-------------------------------------------*/
+
+
+#hero {
+
+	.wrap {
+
+		max-width: 1296px;
+		padding: 0;
+
+	}
+
+}
+
+		// Slideshow on home page
+
+		.flexslider {
+
+			position: relative;
+
+			.slides {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+
+					position: relative;
+					height: 480px;
+					overflow: hidden;
+
+					@media screen and (min-width: 600px) {
+
+						height: 600px;
+
+					}
+
+					@media screen and (min-width: 860px) {
+
+						height: 700px;
+
+					}
+
+				}
+
+					picture {}
+
+						img {
+
+							position: absolute;
+							left: 50%;
+							top: 0;
+							width: auto;
+							max-width: none;
+							height: 480px;
+							@include translate(-50%, 0);
+							z-index: 1;
+
+							@media screen and (min-width: 600px) {
+
+								height: 600px;
+
+							}
+
+							@media screen and (min-width: 860px) {
+
+								height: 700px;
+
+							}
+
+						}
+
+					.overlay {
+
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						width: 100%;
+						max-width: 520px;
+						padding: 0 40px;
+						@include translate(-50%, -50%);
+						z-index: 1;
+
+					}
+
+						p {
+
+							@include font-size(30);
+							line-height: (38/30) + em;
+							font-weight: bold;
+							text-align: center;
+							letter-spacing: 4px;
+							color: $white;
+
+							&:first-of-type {
+
+								margin-top: 0;
+
+							}
+
+							&:last-of-type {
+
+								margin-bottom: 0;
+
+							}
+
+						}
+
+			}
+
+			.flex-control-paging {
+
+				position: absolute;
+				left: 50%;
+				bottom: 28px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				@include translate(-50%, 0);
+				@include group;
+				z-index: 5;
+
+				li {
+
+					float: left;
+					margin: 0 4px 0 0;
+					@include hide-text;
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					a {
+
+						position: relative;
+						display: block;
+						width: 30px;
+						height: 30px;
+
+						&:after {
+
+							content: "";
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							margin: -5px 0 0 -5px;
+							width: 10px;
+							height: 10px;
+							background: rgba(white, 0.50);
+							@include border-radius(50%);
+							@include transition(all 0.35s);
+							z-index: 1;
+
+						}
+
+						&:hover {
+
+							&:after {
+
+								background: $white;
+
+							}
+
+						}
+
+					}
+
+					// Active slide
+
+					.flex-active {
+
+						&:after {
+
+							background: $white;
+
+						}
+
+						&:hover {}
+
+					}
+
+			}
+
+		}
+
+		// Static image only
+
+		.hero {
+
+			position: relative;
+			height: 480px;
+			overflow: hidden;
+
+			@media screen and (min-width: 600px) {
+
+				height: 600px;
+
+			}
+
+			@media screen and (min-width: 860px) {
+
+				height: 700px;
+
+			}
+
+			picture {}
+
+				img {
+
+					position: absolute;
+					left: 50%;
+					top: 0;
+					max-width: none;
+					height: 480px;
+					@include translate(-50%, 0);
+					z-index: 1;
+
+					@media screen and (min-width: 600px) {
+
+						height: 600px;
+
+					}
+
+					@media screen and (min-width: 860px) {
+
+						height: 700px;
+
+					}
+
+				}
+
+			.overlay {
+
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 100%;
+				max-width: 520px;
+				padding: 0 40px;
+				@include translate(-50%, -50%);
+				z-index: 1;
+
+			}
+
+				p {
+
+					@include font-size(30);
+					line-height: (38/30) + em;
+					font-weight: bold;
+					text-align: center;
+					letter-spacing: 4px;
+					color: $white;
+
+					&:first-of-type {
+
+						margin-top: 0;
+
+					}
+
+					&:last-of-type {
+
+						margin-bottom: 0;
+
+					}
+
+				}
+
+		}

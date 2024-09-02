@@ -1,0 +1,291 @@
+
+/*-------------------------------------------
+	Beta
+-------------------------------------------*/
+
+
+#beta {
+
+	padding: 30px 0 45px 0;
+	color: $white;
+	background: $green;
+
+	@media screen and (min-width: 710px) {
+
+		padding: 90px 0 90px 0;
+
+	}
+
+	.wrap {}
+
+		h3 {
+
+			margin-bottom: (0/26) + em;
+			@include font-size(26);
+			line-height: (36/26) + em;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 3px;
+
+			@media screen and (min-width: 710px) {
+
+				margin-bottom: (6/26) + em;
+
+			}
+
+		}
+
+		p {
+
+			padding: 0 20px;
+			@include font-size(18);
+			line-height: (24/18) + em;
+			text-align: center;
+			text-decoration: underline;
+
+			@media screen and (min-width: 710px) {
+
+				padding: 0;
+
+			}
+
+			&:first-of-type {
+
+				margin-top: 0;
+
+			}
+
+			&:last-of-type {
+
+				margin-bottom: 0;
+
+			}
+
+		}
+
+		form {
+
+			width: 100%;
+			max-width: 900px;
+			margin: 20px auto 50px auto;
+
+			@media screen and (min-width: 710px) {
+
+				position: relative;
+				margin: 24px auto 70px auto;
+				padding: 0 125px 0 0;
+
+			}
+
+			ol {
+
+				margin: 0;
+				padding: 0 50px;
+				list-style: none;
+
+				@media screen and (min-width: 710px) {
+
+					padding: 0;
+					@include group;
+
+				}
+
+			}
+
+				li {
+
+					margin: 0 0 7px 0;
+
+					@media screen and (min-width: 710px) {
+
+						float: left;
+						width: 33.33333%;
+						margin: 0;
+						padding: 0 12px 0 0;
+
+					}
+
+					&:last-of-type {
+
+						margin: 0 0 10px 0;
+
+						@media screen and (min-width: 710px) {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+					label {
+
+						display: none;
+
+					}
+
+					input {
+
+						@media screen and (min-width: 710px) {
+
+							padding: 18px 22px;
+
+						}
+
+					}
+
+			button {
+
+				margin: 0 auto;
+
+				@media screen and (min-width: 710px) {
+
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 125px;
+					height: 60px;
+					margin: 0;
+					padding: 2px 0 0 0;
+					z-index: 1;
+
+				}
+
+			}
+
+		}
+
+}
+
+		.connect {
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+
+			}
+
+				li {
+
+					display: inline;
+					@include hide-text;
+
+					@media screen and (min-width: 710px) {
+
+						margin: 0 4px;
+
+					}
+
+				}
+
+					a {
+
+						display: inline-block;
+						width: 60px;
+						height: 60px;
+						border: 4px solid $white;
+						background: transparent url(../img/social.svg);
+						background-size: 156px 104px;
+						@include border-radius(50%);
+						@include transition(background-color 0.35s);
+
+						@media screen and (min-width: 710px) {
+
+							width: 74px;
+							height: 74px;
+							background-size: 198px 132px;
+
+						}
+
+						.no-svg & {
+
+							background-image: url(../img/social.png);
+
+						}
+
+						&:hover {
+
+							background-color: $white;
+							background-position: 0 -52px;
+
+							@media screen and (min-width: 710px) {
+
+									background-position: 0 -66px;
+
+							}
+
+						}
+
+					}
+
+				.facebook {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.twitter {
+
+					a {
+
+						background-position: -52px 0;
+
+						@media screen and (min-width: 710px) {
+
+							background-position: -66px 0;
+
+						}
+
+						&:hover {
+
+							background-position: -52px -52px;
+
+							@media screen and (min-width: 710px) {
+
+								background-position: -66px -66px;
+
+							}
+
+						}
+
+					}
+
+				}
+
+				.instagram {
+
+					a {
+
+						background-position: -104px 0;
+
+						@media screen and (min-width: 710px) {
+
+							background-position: -132px 0;
+
+						}
+
+						&:hover {
+
+							background-position: -104px -52px;
+
+							@media screen and (min-width: 710px) {
+
+								background-position: -132px -66px;
+
+							}
+
+						}
+
+					}
+
+				}
+
+		}

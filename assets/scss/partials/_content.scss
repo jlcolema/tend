@@ -1,0 +1,507 @@
+
+/*-------------------------------------------
+	Content
+-------------------------------------------*/
+
+
+#content {
+
+	padding: 30px 0 30px 0;
+
+	@media screen and (min-width: 600px) {
+
+		padding: 60px 0 120px 0;
+
+	}
+
+	.wrap {}
+
+}
+
+	.matrix {}
+
+	// Butterflies
+
+	.butterflies {
+
+		width: 100%;
+		max-width: 860px;
+		margin: 0 auto 10px auto;
+
+		@media screen and (min-width: 640px) {
+
+			display: table;
+			margin: 0 auto 50px auto;
+
+		}
+
+		.block {
+
+			text-align: center;
+
+			@media screen and (min-width: 640px) {
+
+				display: table-cell;
+				vertical-align: middle;
+				text-align: left;
+
+			}
+
+			&:first-of-type {
+
+				@media screen and (min-width: 640px) {
+
+					width: 50%;
+
+				}
+
+			}
+
+			&:last-of-type {
+
+				@media screen and (min-width: 640px) {
+
+					width: 50%;
+
+				}
+
+			}
+
+		}
+
+			.photo {
+
+				position: relative;
+				display: inline-block;
+
+				@media screen and (min-width: 640px) {
+
+					display: block;
+
+				}
+
+				span {
+
+					position: relative;
+					display: inline-block;
+
+					&:after {
+
+						content: "";
+						position: absolute;
+						left: 20px;
+						top: 20px;
+						right: 20px;
+						bottom: 20px;
+						border: 9px solid $white;
+						z-index: 1;
+
+					}
+
+				}
+
+					img {}
+
+			}
+
+			.text {
+
+				display: inline-block;
+
+				@media screen and (min-width: 640px) {
+
+					display: block;
+
+				}
+
+				img {}
+
+			}
+
+	}
+
+	// Relationships
+
+	.relationships {
+
+		width: 100%;
+		max-width: 860px;
+		margin: 0 auto 15px auto;
+
+		@media screen and (min-width: 640px) {
+
+			display: table;
+			margin: 0 auto 50px auto;
+
+		}
+
+		.block {
+
+			text-align: center;
+
+			@media screen and (min-width: 640px) {
+
+				display: table-cell;
+				vertical-align: middle;
+				text-align: left;
+
+			}
+
+			&:first-of-type {
+
+				margin: 0 0 30px 0;
+
+				@media screen and (min-width: 640px) {
+
+					width: 41%;
+					margin: 0;
+					padding: 0 20px;
+
+				}
+
+			}
+
+			&:last-of-type {
+
+				width: 100%;
+				max-width: 510px;
+				margin: 0 auto;
+
+				@media screen and (min-width: 640px) {
+
+					width: 59%;
+					max-width: none;
+					margin: 0;
+
+				}
+
+			}
+
+		}
+
+			.text {
+
+				position: relative;
+				width: 100%;
+				max-width: 478px;
+				margin: 0 auto;
+				padding: 0 0 34px 0;
+				text-align: left;
+
+				@media screen and (min-widht: 640px ) {
+
+					max-width: none;
+					margin: 0;
+
+				}
+
+				&:after {
+
+					content: "";
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					width: 28px;
+					height: 6px;
+					margin: 0 0 0 -14px;
+					background: $gray;
+					z-index: 1;
+
+				}
+
+				p {
+
+					@include font-size(20);
+					line-height: (25/20) + em;
+					color: rgb(112, 112, 112);
+
+					&:first-of-type {
+
+						margin-top: 0;
+
+					}
+
+					&:last-of-type {
+
+						margin-bottom: 0;
+
+					}
+
+				}
+
+			}
+
+			.photo {
+
+				padding: 15px;
+				background: $white;
+				border: 1px solid rgb(215, 215, 215);
+
+				@media screen and (min-width: 640px) {
+
+
+
+				}
+
+				img {}
+
+			}
+
+	}
+
+	// Love
+
+	.love {
+
+		width: 100%;
+		max-width: 860px;
+		margin: 0 auto;
+
+		@media screen and (min-width: 640px) {
+
+			display: table;
+
+		}
+
+		.block {
+
+			@media screen and (min-width: 640px) {
+
+				display: table-cell;
+				vertical-align: middle;
+
+			}
+
+			&:first-of-type {
+
+				margin: 0 0 20px 0;
+
+				@media screen and (min-width: 640px) {
+
+					position: relative;
+					left: 35px;
+					margin: 0;
+					z-index: 1;
+
+				}
+
+			}
+
+			&:last-of-type {
+
+				@media screen and (min-width: 640px) {
+
+					position: relative;
+					right: 55px;
+
+				}
+
+			}
+
+		}
+
+			.text {
+
+				img {
+
+					margin: 0 auto;
+
+					@media screen and (min-width: 640px) {
+
+						margin: 0;
+
+					}
+
+				}
+
+			}
+
+			.photo {
+
+				img {
+
+					margin: 0 auto;
+
+					@media screen and (min-width: 640px) {
+
+						margin: 0;
+
+					}
+
+				}
+
+			}
+
+	}
+
+	// About Introduction
+
+	.about-intro {
+
+		position: relative;
+		width: 100%;
+		max-width: 768px;
+		margin: 0 auto 75px auto;
+		padding: 0 0 60px 0;
+
+		&:after {
+
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 28px;
+			height: 6px;
+			margin: 0 0 0 -14px;
+			background: $gray;
+			z-index: 1;
+
+		}
+
+		h1 {
+
+			width: 362px;
+			height: 45px;
+			margin: 0 auto 55px auto;
+			background: url(../img/about-tend.png);
+			@include hide-text;
+
+		}
+
+		p {
+
+			color: rgb(112, 112, 112);
+
+			&:first-of-type {
+
+				margin-top: 0;
+
+			}
+
+			&:last-of-type {
+
+				margin-bottom: 0;
+
+			}
+
+		}
+
+	}
+
+	// Testimonial
+
+	.testimonial {
+
+		width: 100%;
+		max-width: 768px;
+		margin: 0 auto 68px auto;
+
+		blockquote {}
+
+			p {
+
+				@include font-size(26);
+				line-height: (35/26) + em;
+				font-weight: bold;
+				text-transform: lowercase;
+				text-align: center;
+				color: $green;
+
+				&:first-of-type {
+
+					margin-top: 0;
+
+					&:before {
+
+						content: "\201C";
+
+					}
+
+				}
+
+				&:last-of-type {
+
+					margin-bottom: 0;
+
+					&:after {
+
+						content: "\201D";
+
+					}
+
+				}
+
+			}
+
+			footer {
+
+				margin: 30px 0 0 0;
+				padding: 0 100px 0 0;
+
+			}
+
+				span {
+
+					display: block;
+					@include font-size(26);
+					line-height: (35/26) + em;
+					font-style: italic;
+					text-transform: uppercase;
+					text-align: right;
+					color: $green;
+
+					&:before {
+
+						content: "– ";
+
+					}
+
+				}
+
+	}
+
+	// Sneak Peek
+
+	.sneak-peek {
+
+		width: 100%;
+		max-width: 852px;
+		margin: 0 auto;
+
+		h2 {
+
+			margin-bottom: (28/20) + em;
+			@include font-size(20);
+			line-height: (30/20) + em;
+			font-weight: normal;
+			font-style: italic;
+			text-align: center;
+			color: $green;
+
+		}
+
+		ul {
+
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: justify;
+			@include placeholder;
+
+		}
+
+			li {
+
+				display: inline-block;
+				width: calc(33.33333% - 20px);
+				margin: 0 0 -40px 0;
+
+				&:last-of-type {}
+
+			}
+
+				picture {}
+
+					img {}
+
+	}
